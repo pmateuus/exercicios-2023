@@ -1,13 +1,116 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Ts</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="ts\src\reset.css">
+  <link rel="stylesheet" href="ts\src\styles.css">
 </head>
+
 <body>
-  <app-root></app-root>
+  <!-- <app-root></app-root> -->
+
+  <header class="header container">
+    <div class="header__content">
+      <p class="header__text">Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
+      <h3 class="header__title">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h3>
+      <p class="header__text">ISSN: 1234-5678</p>
+    </div>
+    <div class="header-button">
+      <img src="ts\src\assets\img\language image.svg" alt="Imagem da Linguagem">
+      PT,BR
+      <img src="ts\src\assets\img\dropdown.svg" alt="Imagem de seta pra baixo">
+    </div>
+    <div>
+      <p>Bem vindo!<br>alguem12@galoascience.com</p>
+      <img src="ts\src\assets\img\notification badge.svg" alt="Notificações">
+      <img src="ts\src\assets\img\foto-de-perfil.svg" alt="Foto de Perfil">
+    </div>
+  </header>
+
+  <aside class="lateral-menu">
+    <h2 class="title-menu">SLACA 2019</h2>
+    <img class="logo-menu" src="ts\src\assets\img\dewey 4.svg" alt="Logo 13 Slaca">
+    <nav class="menu-options">
+      <ul>
+        <li><a href="#">Apresentação</a></li>
+        <li><a href="#">Comitês</a></li>
+        <li><a href="#">Autores</a></li>
+        <li><a href="#">Eixos temáticos</a></li>
+        <li class="selected-element"><a href="#">Trabalhos</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-container">
+
+    <div class="title-video">
+      <h1 class="main-title">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15
+        anos, do município de Campinas/SP </h1>
+      <img src="ts\src\assets\img\vídeo apresentação.svg" alt="Vídeo da página">
+    </div>
+
+    <div class="about-documentation">
+      <div class="buttons">
+        <p><img src="ts\src\assets\img\download.svg" alt="Icone de download">Download</p>
+        <img src="ts\src\assets\img\favoritar.svg" alt="Icone de favoritar">
+        <img src="ts\src\assets\img\doi.svg" alt="Icone do doi"><br>
+        <p>COMO CITAR ESSE TRABALHO?</p>
+      </div>
+
+      <div class="details">
+        <h4 class="title-details">Detalhes</h4>
+        <ul class="details-documentation">
+          <li>Tipo de Apresentação: <b>Pôster</b></li>
+          <li>Eixo temático: <b>Alimentação e saúde (AS)</b></li>
+          <li>Palavras-chaves: <b>Alimentos funcionais, alimentação escolar.</b></li>
+        </ul>
+        <h4 class="title-authors"><b>Autores:</b></h4>
+        <ul class="authors">
+          <li>Galileo Galilei¹</li>
+          <li>Berta Lange de Morretes²</li>
+          <li>Isaac Newton³</li>
+          <li>Cesar Lattes¹</li>
+          <li>Stephen Hawking⁴</li>
+        </ul>
+        <ul class="instituition">
+          <li>¹Universidade Estadual de Campinas</li>
+          <li>²Universidade de São Paulo</li>
+          <li>³Instituto Nacional de Pesquisas Espaciais</li>
+          <li>⁴Universidade Federal do Rio de Janeiro</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="resume">
+      <h3 class="title-resume">Resumo</h3>
+      <p class="text-resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor,
+        mollis felis ut,
+        commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna
+        ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut
+        viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl
+        metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci
+        id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque,
+        ac gravida eros vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant... <b>ver
+          mais</b>
+      </p>
+    </div>
+
+  </main>
+
+
 </body>
+
 </html>
