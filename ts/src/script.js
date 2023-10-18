@@ -1,7 +1,7 @@
 function toggleText() {
     const textResume = document.querySelector(".text-resume");
     const textResumeFull = document.querySelector(".text-resume-full");
-    const readMoreButton = document.querySelector(".read-more-button");
+    const readMoreButton = document.querySelector(".btn-show-more");
     const resume = document.getElementById("resume");
 
     if (textResume.style.display === "none" || textResume.style.display === "") {
@@ -18,7 +18,7 @@ function toggleText() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    const readMoreButton = document.querySelector(".read-more-button");
+    const readMoreButton = document.querySelector(".btn-show-more");
     if (readMoreButton) {
         readMoreButton.addEventListener("click", toggleText);
     }
@@ -30,13 +30,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const successMessageSection = document.querySelector(".success-message");
     const sentTopicContainer = document.querySelector(".sent-topic-container");
     const postsOcultosSection = document.querySelector(".posts-ocultos");
-    const discoverLink = document.querySelector(".discover-link");
     const postButton = document.querySelector(".post-button");
-    const buttonNewTopic = document.querySelector(".button-new-topic");
-    const postSection = document.querySelector(".posts"); 
-    const createTopicButton = document.querySelector(".button-topico"); 
-
-    const editTopicButton = document.querySelector(".edit-topic"); //id edit-topic 
+    const buttonNewTopic = document.querySelector(".btn-create-topic");
+    const postSection = document.querySelector(".posts");
+    const createTopicButton = document.querySelector(".button-topico");
+    const showPostsOcultosButton = document.querySelector(".ops-topic-subject");
 
     function hideAll() {
         initialSection.style.display = "none";
@@ -66,20 +64,18 @@ document.addEventListener("DOMContentLoaded", function () {
         postSection.style.display = "block";
     });
 
-    editTopicButton.addEventListener("click", function (e) {
-        e.preventDefault();
-        hideAll();
-        createTopicSection.style.display = "block";
-        postSection.style.display = "block";
-    });
-
-    discoverLink.addEventListener("click", function (e) {
-        e.preventDefault();
+    showPostsOcultosButton.addEventListener("click", function () {
         hideAll();
         postsOcultosSection.style.display = "block";
-        initialSection.style.display = "block";
         postSection.style.display = "none";
+        initialSection.style.display = "block";
+    });
+
+    postsOcultosSection.addEventListener("click", function () {
+        hideAll();
+        postsOcultosSection.style.display = "none";
+        postSection.style.display = "block";
+        initialSection.style.display = "block";
     });
 });
-
 

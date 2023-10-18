@@ -120,7 +120,7 @@
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.title-menu {
+.title-menu-lateral {
   font-family: var(--font1);
   font-size: 30px;
   font-weight: 700;
@@ -190,7 +190,7 @@
   justify-content: space-between;
 }
 
-.main-title {
+.title-menu {
   color: var(--orange);
   font-family: var(--font1);
   font-size: 20px;
@@ -409,7 +409,7 @@
   border-width: 2px;
 }
 
-.read-more-button {
+.btn-show-more {
   border: none;
   background: none;
   color: #ED7839;
@@ -484,7 +484,7 @@
   margin-bottom: 47px;
 }
 
-.button-new-topic {
+.btn-create-topic {
   border-radius: 4px;
   width: 235.145px;
   height: 32px;
@@ -502,11 +502,11 @@
   margin-right: 412.77px;
 }
 
-.button-new-topic:hover {
+.btn-create-topic:hover {
   background: var(--orange-gradient-two);
 }
 
-.line-behind-button-new-topic {
+.line-behind-btn-create-topic {
   margin-top: -30px;
 }
 

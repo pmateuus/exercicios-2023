@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ts",
+            "outputPath": "exercicios-2023/ts/src",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,9 +28,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/reset.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/script.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -96,12 +99,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/reset.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/script.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
