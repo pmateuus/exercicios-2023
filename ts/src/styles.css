@@ -487,11 +487,10 @@
 
 .btn-create-new-topic {
   border-radius: 4px;
-  width: 235.145px;
-  height: 32px;
   background: var(--orange-gradient-three);
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.24)) drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.12));
-  border: none;
+  width: 235.145px;
+  height: 32px;
   color: var(--white);
   text-align: center;
   font-family: var(--font2);
@@ -501,6 +500,9 @@
   margin-bottom: 14px;
   margin-left: 411.08px;
   margin-right: 412.77px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-create-new-topic:hover {
