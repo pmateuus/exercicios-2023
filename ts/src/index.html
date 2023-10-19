@@ -70,11 +70,11 @@
       <div class="about-documentation">
         <div class="share">
           <div class="button-download">
-            <button class="download"><img src="assets/img/download.svg" alt="Icone de download">Download</button>
+            <a href="#" class="download"><img src="assets/img/download.svg" alt="Icone de download">Download</a>
           </div>
           <div class="others">
-            <button class="other-buttons"><img src="assets/img/favoritar.svg" alt="Icone de favoritar"></button>
-            <button class="other-buttons"><img src="assets/img/doi.svg" alt="Icone do doi"></button>
+            <a href="#" class="other-buttons"><img src="assets/img/favoritar.svg" alt="Icone de favoritar"></a>
+            <a href="#" class="other-buttons"><img src="assets/img/doi.svg" alt="Icone do doi"></a>
           </div>
         </div>
 
@@ -184,18 +184,20 @@
           <p> Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for
             respondido!</p>
           <a href="#" class="discover-link">Descubra outros trabalhos!</a>
-          <button class="btn-create-topic">criar tópico</button>
-          <div class="line-behind-btn-create-topic">
+          <button class="btn-create-new-topic">criar tópico</button>
+          <div class="line-behind-btn-create-new-topic">
             <hr class="line-behind-button">
           </div>
         </div>
 
         <div class="create-topic" style="display: none;">
           <p class="title-create-topic">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
-          <h3>Assunto</h3>
-          <input type="text" id="topic-subject" name="topic-subject"
-            placeholder="Defina um tópico sucinto para notificar os autores..." class="topic-subject">
-          <h3>Conteúdo</h3>
+          <form>
+            <h3>Assunto</h3>
+            <input type="text" id="subject" name="subject"
+              placeholder="Defina um tópico sucinto para notificar os autores..." class="subject">
+            <h3>Conteúdo</h3>
+          </form>
           <div class="textarea-container">
             <textarea id="topic-content" name="topic-content" placeholder="" class="topic-content"></textarea>
             <div class="rectangle">
@@ -217,7 +219,7 @@
           <p class="text-discussions">Sabia que o maior estímulo no desenvolvimento científico e cultural é a
             curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
           <div class="button-discussions">
-            <button class="button-topico">
+            <button class="btn-create-topic">
               <img src="assets/img/icon - criar.svg" alt="Icone de +">criar tópico</button>
           </div>
           <hr class="line-behind-button">
@@ -249,21 +251,23 @@
           </div>
         </div>
 
-        <div class="answered-topic ops-topic-subject">
-          <div class="posts">
-            <div class=" posts-content">
-              <h4>Assunto da pergunta aparece aqui</h4>
-              <p class="name-user">Carlos Henrique Santos</p>
-              <p class="user-coment">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise
-                da
-                dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
-              <img src="assets/img/card-footer.svg" alt="Icone de like e resposta">
+        <div class="answered-topic">
+          <div class="ops-topic-subject">
+            <div class="posts">
+              <div class=" posts-content">
+                <h4>Assunto da pergunta aparece aqui</h4>
+                <p class="name-user">Carlos Henrique Santos</p>
+                <p class="user-coment">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise
+                  da
+                  dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                <img src="assets/img/card-footer.svg" alt="Icone de like e resposta">
+              </div>
             </div>
           </div>
         </div>
 
         <div class="posts-ocultos" style="display: none;">
-          <div class="posts-ocultos-container">
+          <div class="comments-container">
 
             <div class="post-complete">
               <div class="posts-content">

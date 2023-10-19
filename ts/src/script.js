@@ -31,9 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const sentTopicContainer = document.querySelector(".sent-topic-container");
     const postsOcultosSection = document.querySelector(".posts-ocultos");
     const postButton = document.querySelector(".post-button");
-    const buttonNewTopic = document.querySelector(".btn-create-topic");
+    const buttonNewTopic = document.querySelector(".btn-create-new-topic");
     const postSection = document.querySelector(".posts");
-    const createTopicButton = document.querySelector(".button-topico");
+    const createTopicButton = document.querySelector(".btn-create-topic");
     const showPostsOcultosButton = document.querySelector(".ops-topic-subject");
 
     function hideAll() {
@@ -79,3 +79,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// cy.get('[disabled]').click({force: true})
